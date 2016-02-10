@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://ec2-52-31-177-160.eu-west-1.compute.amazonaws.com/" />
+<title>2openCouponsAndCreateNew</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">2openCouponsAndCreateNew</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/open-eshop-2.0.1/oc-panel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id=&quot;accordion&quot;] //a[@title=&quot;Coupons&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//li//a[@title=&quot;Coupon&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id=&quot;content&quot;]//a[@class=&quot;btn btn-primary pull-right&quot;]//i[@class=&quot;glyphicon glyphicon-pencil&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//div[@id=&quot;crud&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>Perfect_Day</td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=name</td>
+	<td>Perfect_Day</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=name</td>
+	<td>Perfect_Day</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=discount_amount</td>
+	<td>20</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=discount_amount</td>
+	<td>20</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=valid_date</td>
+	<td>2016-12-12</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>name=valid_date</td>
+	<td>2016-12-12</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//div[@class=&quot;alert alert-success&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>xpath=//div[@class=&quot;alert alert-success&quot;]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
